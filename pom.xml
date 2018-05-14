@@ -29,6 +29,8 @@
 		<module>
 			springcloud-registry
 		</module>
+		<module>springcloud-feign</module>
+		<module>springcloud-ribbon</module>
 	</modules>
 	<dependencies>
 		<dependency>
@@ -48,7 +50,17 @@
 		</dependency>
 
 	</dependencies>
-
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Dalston.RC1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<build>
 		<plugins>
 			<plugin>
