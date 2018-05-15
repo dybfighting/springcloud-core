@@ -1,5 +1,6 @@
 package com.springcloud.ribbon.service;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -16,7 +17,12 @@ public class IndexService {
     @Autowired
     RestTemplate restTemplate;
 
+    @HystrixCommand(fallbackMethod = "indexError")
     public String indexService(){
         return restTemplate.getForObject("http://springcloud-eurekaclient/eurekaclient/index",String.class);
+    }
+
+    public String indexError(){
+        return "sorry, index error ";
     }
 }
