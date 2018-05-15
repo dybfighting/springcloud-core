@@ -1,2 +1,3 @@
 # springcloud-core
-ssssssss
+gissssssss
+Creating a new branch is quick AND simple.
