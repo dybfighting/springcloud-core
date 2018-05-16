@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 public class EurekaClientFeignHytrix implements EurekaClientFeign{
     @Override
     public String eurekaClientIndex() {
+
         return "eurekaClientIndex error ";
     }
 }
