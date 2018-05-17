@@ -8,20 +8,21 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
+
 @EnableHystrix
 @EnableHystrixDashboard
 @EnableDiscoveryClient
 @SpringBootApplication
 public class SpringcloudRibbonApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringcloudRibbonApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringcloudRibbonApplication.class, args);
+    }
 
-	@Bean
-	@LoadBalanced
-	RestTemplate restTemplate(){
-		return new RestTemplate();
-	}
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 
 }
