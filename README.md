@@ -4,7 +4,9 @@
 3.feign 服务消费
 4.hystrix 断路器
 5.zuul 路由网关
-
+6.config-server
+7.config-client
+8.bus 消息总线
 
 
 feign使用hystrix-dashboard需要@EnableCircuitBreaker注解
