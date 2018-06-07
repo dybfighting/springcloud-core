@@ -14,11 +14,6 @@ import java.util.Arrays;
 public class SpringcloudZuulApplication {
 
     public static void main(String[] args) throws UnsupportedEncodingException {
-//        SpringApplication.run(SpringcloudZuulApplication.class, args);
-        String s = "9999";
-        System.out.println(Arrays.toString(s.getBytes("utf-8")));
-        byte b = 0x68;
-        String data = "{head:{tag1:value1,tag2:value2,...},body:{tag3:value3,tag4:value4, params:[{ param1:values1 },{ paramn:valuesn }],...}}";
-        System.out.println(Arrays.toString(data.getBytes("UTF-8"))+"lenght:"+data.getBytes("UTF-8").length);
+        SpringApplication.run(SpringcloudZuulApplication.class, args);
     }
 }
