@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author dyb
  * @version V1.0
  * @Package com.dyb.data.proxy
- * @Description: TODO
+ * @Description: jdk动态代理
  * @date 2018/6/7 下午4:31
  */
 @Component

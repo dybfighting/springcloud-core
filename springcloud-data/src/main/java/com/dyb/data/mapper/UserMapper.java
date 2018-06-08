@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserMapper {
 
-    @TargetDataSource(name = "fincont")
+//    @TargetDataSource(name = "fincont")
     int insert(User record);
 
     int insertSelective(User record);

@@ -18,9 +18,13 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService{
     @Autowired
     private UserMapper userMapper;
+
     @Override
 //    @TargetDataSource(name = "fincont")
     public int insert(User user) {
+        System.out.println("-----insert-----");
+        System.out.println(userMapper);
         return userMapper.insert(user);
+//        return 1;
     }
 }
